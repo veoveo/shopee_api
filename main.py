@@ -141,6 +141,7 @@ async def create_item(qrcode_token: QrcodeToken = Body(...), current_user: dict 
                 "login_time": int(time.time()),
                 "status_nexday": False,
                 "status_today": False,
+		"verify": True,
                 "coin_today": 0,
                 "ip": ip
             })
